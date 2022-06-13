@@ -30,14 +30,14 @@ def main():
         move_number += 1
 
         if move_number >= 5:
-            if ((boardArray['1'] == boardArray['2'] == boardArray['3'] != ' ') or
-                (boardArray['4'] == boardArray['5'] == boardArray['6'] != ' ') or
-                (boardArray['7'] == boardArray['8'] == boardArray['9'] != ' ') or
-                (boardArray['1'] == boardArray['4'] == boardArray['7'] != ' ') or
-                (boardArray['2'] == boardArray['5'] == boardArray['8'] != ' ') or
-                (boardArray['3'] == boardArray['6'] == boardArray['9'] != ' ') or
-                (boardArray['1'] == boardArray['5'] == boardArray['9'] != ' ') or
-                (boardArray['3'] == boardArray['5'] == boardArray['7'] != ' ')):
+            if ((boardArray['1'] == boardArray['2'] == boardArray['3']) or
+                (boardArray['4'] == boardArray['5'] == boardArray['6']) or
+                (boardArray['7'] == boardArray['8'] == boardArray['9']) or
+                (boardArray['1'] == boardArray['4'] == boardArray['7']) or
+                (boardArray['2'] == boardArray['5'] == boardArray['8']) or
+                (boardArray['3'] == boardArray['6'] == boardArray['9']) or
+                (boardArray['1'] == boardArray['5'] == boardArray['9']) or
+                (boardArray['3'] == boardArray['5'] == boardArray['7'])):
                 print("\nGood Game. Thanks for playing!")                
                 print(f"{player} won the game!\n") 
                 break
